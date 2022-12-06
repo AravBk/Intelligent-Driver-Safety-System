@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Intelligent Driver Safety System</title>
+  </head>
+  <style>
+        body{
+        margin: 0px;
+        }
+        h2{
+        text-align: center;
+        font-size: 40px;
+        /* margin-left: 25%; */
+        }
+        h3{
+          margin-top: -2%;
+          text-align: center;
+          font-size: 30px;
+          color: blue;
+        }
+        h4{
+          margin-top: 1%;
+          text-align: center;
+          font-size: 27px;
+          color: black;
+        }
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333;
+        }
+
+        li {
+          float: left;
+        }
+
+        li a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 16px 18px;
+          text-decoration: none;
+        }
+
+        /* Change the link color to #111 (black) on hover */
+        li a:hover {
+          background-color: #111;
+        }
+        img{
+          /* align-items: center; */
+          margin-top: 2%;
+          margin-left: 6%;
+          width: 350px;
+        }
+  </style>
+  <body>
+  <ul>
+      <li><a href="/">About</a></li>
+      <li><a href="/display">S3 Bucket Content</a></li>
+      <li><a href="/team">Team</a></li>
+  </ul>
+    <div class="content">
+        <div>
+          <h2> INTELLIGENT DRIVER SAFETY SYSTEM</h2>
+          <h3> CSE 705 Seminar Project - IOT</h3>
+          <h4> S3 BUCKET CONTENT</h4>
+          <!-- <h3>Here are the media files inside the S3 bucket:</h3> -->
+            {% for item in contents %}
+              
+                <!-- <p>{{ item }}</p>
+                <a href="/{{ item.Key }}"> {{ item.Key }} </a> -->
+                <img src={{ item }}>
+              
+            {% endfor %}
+        </div>
+    </div>
+  </body>
+</html>

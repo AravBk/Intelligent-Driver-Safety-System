@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Intelligent Driver Safety System</title>
+  </head>
+  <style>
+        body{
+        margin: 0px;
+        }
+        h2{
+        text-align: center;
+        font-size: 40px;
+        /* margin-left: 25%; */
+
+        }
+        h3{
+          margin-top: -2%;
+          text-align: center;
+          font-size: 30px;
+          color: blue;
+        }
+        h4{
+          margin-top: 1%;
+          text-align: center;
+          font-size: 27px;
+          color: black;
+        }
+        h5{
+            margin-top: -3%;
+            text-align: center;
+            color: rgb(20, 5, 227);
+            font-size: 20px;
+        }
+        h6{
+            margin-top: 6%;
+            text-align: center;
+            color: black;
+            font-size: 25px;
+
+        }
+        ul {
+          display: block;
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333;
+        }
+
+        li {
+          float: left;
+        }
+
+        li a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 16px 18px;
+          text-decoration: none;
+        }
+
+        /* Change the link color to #111 (black) on hover */
+        li a:hover {
+          background-color: #111;
+        }
+
+        img{
+            width: 100%;
+        }
+        /* Three columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  height: 4%;
+  margin-left: 5%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 0 16px;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+
+
+  </style>
+  <body>
+    <ul>
+        <li><a href="/">About</a></li>
+        <li><a href="/display">S3 Bucket Content</a></li>
+        <li><a href="/team">Team</a></li>
+    </ul>
+  <div>
+    <h2> INTELLIGENT DRIVER SAFETY SYSTEM</h4>
+    <h3> CSE 705 Seminar Project - IOT</h3>
+    <h4> TEAM</h4>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="{{url_for('static', filename='aravind.jpg')}}" />
+        <div class="container">
+          <h6>Aravind Balakrishnan</h6>
+          <h5>UB ID: 50412479<h5>
+        </div>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card">
+        <img src="{{url_for('static', filename='oviyaa.png')}}" />
+        <div class="container">
+          <h6>Oviyaa Balamurugan</h6>
+          <h5> UB ID: 50418472</h5>
+        </div>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card">
+        <img src="{{url_for('static', filename='rithvik.jpg')}}" />
+        <div class="container">
+          <h6>Rithvik Alahari Venkata Sai</h6>
+          <h5>UB ID: 50418803</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  </body>
+</html>

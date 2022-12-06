@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Intelligent Driver Safety System</title>
+  </head>
+  <style>
+        body{
+        margin: 0px;
+        }
+
+        h1{
+          margin-top: 2%;
+          text-align: center;
+          font-size: 18px;
+        }
+        h2{
+        text-align: center;
+        font-size: 40px;
+        /* margin-left: 25%; */
+
+        }
+        h3{
+          margin-top: -2%;
+          text-align: center;
+          font-size: 30px;
+          color: blue;
+        }
+        h4{
+          margin-top: 1%;
+          text-align: center;
+          font-size: 27px;
+          color: black;
+        }
+        ul {
+          width: 100%;
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333;
+        }
+
+        li {
+          float: left;
+        }
+
+        li a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 16px 18px;
+          text-decoration: none;
+        }
+
+        /* Change the link color to #111 (black) on hover */
+        li a:hover {
+          background-color: #111;
+        }
+        img{
+          /* align-items: center; */
+          margin-top: 1%;
+          margin-left: 18%;
+          width: 1000px;
+        }
+  </style>
+  <body>
+    <ul>
+      <li><a href="/">About</a></li>
+      <li><a href="/display">S3 Bucket Content</a></li>
+      <li><a href="/team">Team</a></li>
+  </ul>
+  <div>
+    <h2> INTELLIGENT DRIVER SAFETY SYSTEM</h4>
+    <h3> CSE 705 Seminar Project - IOT</h3>
+    <h4> IOT application to avoid driver drowziness</h4>
+    <img src="{{url_for('static', filename='struct.png')}}" />
+    <h1>This project seeks to increase traffic safety and offer drivers an intelligent safety system to prevent accidents. <br> It keeps the driver awake and prevents them from dozing off. 
+      <br> The system will track eye movement and determine if the driver's behavior indicates that the eyes have been closed for a prolonged period of time. <br> If this occurs, the system will automatically vibrate the steering and play a loud sound to notify the driver. <br>
+      When the system determines that the vehicle's driver poses a serious risk, <br> The application will use the Telegram API to warn close family members about the driver's condition and inform emergency contacts.</h1>
+  </div>
+  </body>
+</html>
